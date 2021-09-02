@@ -17,6 +17,7 @@
 ***************************************************************/
 '''
 
+
 def decorator_func(func):
     def mulitply_params(num1, num2):
         times2 = num1*2
@@ -27,8 +28,16 @@ def decorator_func(func):
 
 @decorator_func
 def divide_function(num1, num2):
-    answer = int(num1/num2)
-    return answer
+    try:
+        answer = int(num1/num2)
+        return answer
+    except ValueError:
+        print('parameters must be numbers')
+        print(ValueError)
+    except ZeroDivisionError:
+        print('can not divide by zero')
+        print(ZeroDivisionError)
+
 
 if __name__ == "__main__":
     dec_answer = divide_function(36, 4)
