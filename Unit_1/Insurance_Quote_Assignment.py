@@ -2,7 +2,7 @@
 /***************************************************************
 * Name: Insurance Quote Assignment
 * Author: Reed James
-* Created: 29 Aug 2021
+* Created: 1 Sept 2021
 * Course: CIS 289 - Python
 * Version: Python 3.8.2
 * OS: Windows 10
